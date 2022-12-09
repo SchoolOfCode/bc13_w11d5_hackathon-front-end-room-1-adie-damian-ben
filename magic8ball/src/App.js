@@ -11,7 +11,7 @@ function App() {
 
   const [answer, setAnswer] = useState("");
 
-  const url = `https://magic8ballroom1.onrender.com/`;
+  const url = `http://localhost:8001/api/answers`;
   const { data } = useFetch(url);
 
   const theme = useContext(ThemeContext);
