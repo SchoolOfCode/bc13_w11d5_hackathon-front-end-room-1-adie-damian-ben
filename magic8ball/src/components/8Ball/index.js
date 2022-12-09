@@ -3,7 +3,7 @@ import './8ball.css';
 
 function EightBall({ answer }) {
 
-    let ranInt = Math.floor(Math.random() * 3);
+    let ranInt = Math.floor(Math.random() * 6);
 
     return (
         <div className="eight-ball-container">
