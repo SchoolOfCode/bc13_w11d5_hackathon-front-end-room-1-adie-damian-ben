@@ -42,6 +42,12 @@
   transition: 0.5s;
 }
 
+.app-dark input {
+  background-color: #ffffff00;
+  border-color: #fff;
+  color: #fff;
+}
+
 div.App > div.app-header {
   align-self: flex-start;
   margin-left: 5vw;
