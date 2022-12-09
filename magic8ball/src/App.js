@@ -11,7 +11,7 @@ function App() {
 
   const [answer, setAnswer] = useState("");
 
-  const url = `http://localhost:8001/api/answers`;
+  const url = `https://m8ball1.onrender.com/api/answers`;
   const { data } = useFetch(url);
 
   const theme = useContext(ThemeContext);
