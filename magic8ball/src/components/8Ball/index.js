@@ -1,7 +1,10 @@
 import React from "react";
 import './8ball.css';
 
-function EightBall() {
+function EightBall({ answer }) {
+
+    let ranInt = Math.floor(Math.random() * 3);
+
     return (
         <div className="eight-ball-container">
             <div className="eight-ball-body">
@@ -9,7 +12,9 @@ function EightBall() {
                     <div className="eight-ball-answer">
                     </div>
                 </div>
-                <p>Answer here!</p>
+                {/* {error && <div>{error}</div>}
+                {isPending && <div>Loading...</div>} */}
+                <p>{answer?.payload?.length && answer.payload[ranInt].answer}</p>
             </div>
         </div>
     )

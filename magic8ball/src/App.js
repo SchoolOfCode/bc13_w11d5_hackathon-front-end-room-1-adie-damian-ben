@@ -2,11 +2,18 @@ import './App.css';
 import Header from './components/Header';
 import InputSection from './components/InputSection';
 import EightBall from './components/8Ball';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ThemeContext } from './hooks/themeContext';
 import SwitchButton from './components/Button/button';
+import useFetch from './hooks/useFetch';
 
 function App() {
+
+  const [answer, setAnswer] = useState("");
+
+  const url = `http://localhost:8001/api/answers`;
+  const { data } = useFetch(url);
+
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
@@ -16,8 +23,8 @@ function App() {
         <Header/>
       </div>
       <div className="app-body">
-        <InputSection/>
-        <EightBall/>
+        <InputSection setAnswer={setAnswer} data={data}/>
+        <EightBall answer={answer}/>
       </div>
       <SwitchButton/>
     </div>

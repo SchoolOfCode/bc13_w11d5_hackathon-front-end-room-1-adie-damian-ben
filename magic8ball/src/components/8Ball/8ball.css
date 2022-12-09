@@ -12,11 +12,12 @@
 
 .eight-ball-body > p {
     position: absolute;
-    left: 30%;
+    left: 0%;
     top: 27.5%;
     font-size: 30px;
     color: #FFF;
     justify-self: center;
+    text-align: center;
 }
 
 .eight-ball-answer-container {

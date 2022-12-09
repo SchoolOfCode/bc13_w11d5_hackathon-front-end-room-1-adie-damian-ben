@@ -1,7 +1,7 @@
-import React from "react";
 import './inputsection.css';
 
-function InputSection() {
+function InputSection({setAnswer, data}) {
+
     return (
         <div className="input-section-container">
             <div className="input-section-header">
@@ -11,7 +11,7 @@ function InputSection() {
                 <input placeholder="Ask the Magic 8-Ball anything.."></input>
             </div>
             <div className="input-section-submit">
-                <button>Submit!</button>
+                <button onClick={setAnswer(data)}>Submit!</button>
             </div>
         </div>
     )
