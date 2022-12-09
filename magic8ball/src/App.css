@@ -15,6 +15,31 @@
   flex-flow: column wrap;
   /* justify-items: center;
   align-items: center; */
+  height: 100vh;
+}
+
+.app-dark {
+  background-color: #161620;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.app-light {
+  background-color: #ffffff;
+  transition: 0.5s;
+  color: #161620;
+}
+
+.app-dark button:first-of-type {
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: 2px solid #fff;
+}
+
+.app-dark button:first-of-type:hover {
+  border: 2px solid #4151DA;
+  color: #4151DA;
+  transition: 0.5s;
 }
 
 div.App > div.app-header {
@@ -27,5 +52,5 @@ div.App > div.app-body {
   flex-flow: row wrap;
   /* gap: 12vw; */
   justify-content: space-between;
-  margin: 0 10vw 0 10vw;
+  margin: 2vh 15vw 0 15vw;
 }
