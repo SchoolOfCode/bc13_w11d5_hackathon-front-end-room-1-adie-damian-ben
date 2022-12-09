@@ -1,0 +1,32 @@
+.eight-ball-container {
+    display: inline-block;
+}
+
+.eight-ball-body {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #070707;
+    border-radius: 1000px;
+}
+
+.eight-ball-body > p {
+    position: absolute;
+    left: 30%;
+    top: 27.5%;
+    font-size: 30px;
+    color: #FFF;
+    justify-self: center;
+}
+
+.eight-ball-answer-container {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 300px 175px 0 175px;
+    border-color: #4151DA transparent transparent transparent;
+    transform: rotate(0deg);
+}

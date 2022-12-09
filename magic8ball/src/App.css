@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: 'Poppins';
+}
+
 .App {
   display: flex;
   flex-flow: column wrap;
-  justify-items: center;
-  align-items: center;
+  /* justify-items: center;
+  align-items: center; */
+}
+
+div.App > div.app-header {
+  align-self: flex-start;
+  margin-left: 5vw;
 }
 
 div.App > div.app-body {
   display: flex;
   flex-flow: row wrap;
-  gap: 12vw;
+  /* gap: 12vw; */
+  justify-content: space-between;
+  margin: 0 20vw 0 10vw;
 }

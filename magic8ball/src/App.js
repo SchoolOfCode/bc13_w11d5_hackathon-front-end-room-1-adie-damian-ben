@@ -6,7 +6,9 @@ import EightBall from './components/8Ball';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <div className="app-header">
+        <Header/>
+      </div>
       <div className="app-body">
         <InputSection/>
         <EightBall/>
