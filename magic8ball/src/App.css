@@ -42,9 +42,9 @@
   transition: 0.5s;
 }
 
-.app-dark input {
+.app-dark input:first-of-type {
   background-color: #ffffff00;
-  border-color: #fff;
+  border: 2px solid #fff;
   color: #fff;
 }
 
